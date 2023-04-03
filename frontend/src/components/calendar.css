@@ -41,7 +41,6 @@
 .calendar-day {
   display: flex;
   background-color: #F48444;
-  
   box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.37);
   border-radius: 9999px;
   padding: 15px;

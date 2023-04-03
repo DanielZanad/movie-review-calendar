@@ -3,3 +3,33 @@
   top: 50%;
   transform: translate(0, -50%);
 }
+
+.add-movie {
+  position: relative;
+  margin-top: 35px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.5s linear;
+  overflow: hidden;
+}
+
+.add-movie::before {
+  content: "";
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f4854477;
+  transition: left 0.5s linear;
+}
+
+.add-movie:hover::before {
+  left: 0;
+}
+
+.add-movie:hover {
+  
+  background-color: #f4854477;
+}
