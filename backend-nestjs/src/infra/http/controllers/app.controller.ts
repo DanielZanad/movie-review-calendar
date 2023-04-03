@@ -3,10 +3,10 @@ import { PrismaService } from '../../database/prisma/prisma.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(private readonly prisma_service: PrismaService) {}
 
   @Get()
-  getHello() {
-    return this.prismaService.review.findMany();
+  get_all_reviews() {
+    return this.prisma_service.review.findMany();
   }
 }
