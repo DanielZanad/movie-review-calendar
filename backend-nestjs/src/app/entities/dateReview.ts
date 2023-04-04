@@ -1,6 +1,10 @@
 export class DateReview {
   private readonly date: Date;
 
+  public get value(): Date {
+    return this.date;
+  }
+
   public validateDate(date: Date): boolean {
     return date >= new Date();
   }

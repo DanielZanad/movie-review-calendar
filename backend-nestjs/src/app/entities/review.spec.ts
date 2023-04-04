@@ -1,4 +1,4 @@
-import { DateReview } from './date';
+import { DateReview } from './dateReview';
 import { Review } from './review';
 
 describe('Review', () => {

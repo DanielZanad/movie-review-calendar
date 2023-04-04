@@ -1,4 +1,4 @@
-import { DateReview } from './date';
+import { DateReview } from './dateReview';
 
 describe('DateReview Value Object', () => {
   it('should be able to create a new DateReview', () => {

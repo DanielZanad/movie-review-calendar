@@ -14,7 +14,7 @@ model Review {
   id         String   @id @default(uuid())
   content    String
   movie_name String
-  reviewed   Boolean
+  reviewed   Boolean  @default(false)
   date       DateTime @default(now())
 
   @@map("reviews")

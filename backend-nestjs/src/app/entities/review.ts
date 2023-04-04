@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import { DateReview } from './date';
+import { DateReview } from './dateReview';
 
 export interface ReviewProps {
   movie_name: string;
@@ -13,12 +13,12 @@ export class Review {
   private props: ReviewProps;
 
   constructor(props: ReviewProps, id?: string) {
-    if (props) this._id = id ?? randomUUID();
+    this._id = id ?? randomUUID();
     this.props = props;
   }
 
   public get id(): string {
-    return this.id;
+    return this._id;
   }
 
   public set movie_name(movie_name: string) {
